@@ -16,4 +16,12 @@
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
+	<mvc:annotation-driven />
+	<mvc:resources mapping="/static/imgs/**" location="static/imgs/" />
+	<mvc:resources mapping="/static/easyui/**" location="static/easyui/" />
+	<mvc:resources mapping="/static/js/**" location="static/js/" />
+	<mvc:resources mapping="/static/css/**" location="static/css/" />
+	<!-- SpringMVC 支持上传 -->
+		<bean id="multipartResolver"
+	class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
 </beans>
