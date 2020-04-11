@@ -8,6 +8,12 @@
   <artifactId>web</artifactId>
   <packaging>war</packaging>
   <dependencies>
+  
+  		<dependency>
+  			<groupId>com.aiyi</groupId>
+			<artifactId>service</artifactId>
+    		<version>0.0.1-SNAPSHOT</version>
+  		</dependency>
 		<!-- JSP相关 -->
 		<dependency>
 			<groupId>jstl</groupId>
@@ -34,6 +40,13 @@
 			<artifactId>spring-webmvc</artifactId>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/com.mchange/c3p0 -->
+		<dependency>
+    		<groupId>com.mchange</groupId>
+    		<artifactId>c3p0</artifactId>
+   			 <version>0.9.5.3</version>
+		</dependency>
+		
         <dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
